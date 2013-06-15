@@ -52,9 +52,10 @@ def main():
 				modules[othermod] += count 
 
 		print '%10s%-20s%10s' %(10*'-', dname.center(20), 10*'-') 
-		for i, (m, lines) in enumerate(sorted(modules.iteritems(), 
-				key = lambda x : x[1],
-				reverse = True)):
+
+		msorted = sorted(modules.iteritems(), key = lambda x : x[1],
+				reverse = True)
+		for i, (m, lines) in enumerate(msorted):
 			print '%-3d%-20s%d' %(i, m, lines) 
 
 		print 40*'-'
