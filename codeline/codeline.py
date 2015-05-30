@@ -3,7 +3,6 @@ import os
 import sys
 
 '''
-aaa
 Codeline -- version 1.0
 Used to summarize the lines of source code in C
 '''
